@@ -1,0 +1,61 @@
+#include<stdio.h>
+main()
+{
+	int a[2][2], b[2][2], c[2][2];
+	int i,j;
+	//For Matrix-1
+	printf("Enter array element: \n");
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			printf("Enter Elements:");
+			scanf("%d",&a[i][j]);
+		}
+	}
+	printf("-------------Matrix-1-------------\n");
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			printf("%d \t",a[i][j]);
+		}
+		printf("\n");
+	}
+	//For Matrix-2
+	printf("\nEnter array element: \n");
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			printf("Enter Elements:");
+			scanf("%d",&b[i][j]);
+		}
+	}
+	printf("-------------Matrix-2-------------\n");
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			printf("%d \t",b[i][j]);
+		}
+		printf("\n");
+	}
+	//For Multiplication Matrix-Result
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			c[i][j]=a[i][j]*b[i][j];
+		}
+	}
+	printf("\n-------Result : Mulitiplication of Matrix---------\n");
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			printf("%d \t",c[i][j]);
+		}
+		printf("\n");
+	}
+}
